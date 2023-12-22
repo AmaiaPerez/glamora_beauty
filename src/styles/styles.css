@@ -1,0 +1,346 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    color: #6a6a6a;
+    margin-top: 40px;
+    font-weight: 200;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin: auto;
+}
+
+.container .card {
+    width: 730px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: white;
+}
+
+.containter .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 300px;
+    height: 220px;
+    padding: 0%;
+    margin: auto;
+
+}
+
+.container .card .imgPer {
+    width: 180px;
+    height: 200px;
+    padding: 0%;
+    margin: auto;
+
+}
+
+.container .card h4 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #6a6a6a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container .card .btn {
+    color: black;
+    padding: 6px 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.container .card .x {
+    width: 60px;
+    height: 60px;
+}
+
+.btn secondary:hover {
+    background: #ddd;
+}
+
+.primary {
+    background-color: #007bff;
+}
+
+.primary:hover {
+    background: #0b7dda;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.cards-container>* {
+    flex: 1 1 40%;
+    /* Esto hará que los elementos ocupen aproximadamente el 40% del ancho del contenedor, pero se ajustarán para evitar el desbordamiento */
+    max-width: 40%;
+    /* Esto limitará el ancho de los elementos al 40% del contenedor */
+    margin: 10px;
+    /* Esto agregará un poco de espacio alrededor de los elementos */
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: rgb(254, 192, 116);
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+}
+
+.buscador {
+    margin: 0%;
+}
+
+header h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.imgHeader img {
+    width: 75px;
+    height: 95%;
+    border: 0;
+    margin-top: 0;
+}
+
+
+input {
+    width: 70%;
+    border: none;
+    padding: 14px 20px;
+
+}
+
+.btnBuscar {
+    background-color: bisque;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropbtn {
+    background-color: rgb(254, 192, 116);
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dropdown-content a {
+    color: #6a6a6a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: bisque;
+}
+
+.header-footer {
+    background-color: rgb(254, 192, 116);
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-footer-text {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.mb-3 {
+    color: #007bff;
+}
+
+
+/* Inicio */
+.inicio {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #f3f3f3;
+}
+
+.inicio h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6a6a6a;
+    font-size: 200px;
+
+}
+
+.inicio img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Rueda */
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+
+#contenedor {
+    background-color: #f3f3f3;
+    display: grid;
+    place-content: center;
+    height: 8vh;
+    color: #000;
+    margin-top: 0px;
+}
+
+.rueda {
+    border: 10px solid #6a6a6a;
+    border-radius: 50%;
+    border-left-color: transparent;
+    width: 80px;
+    height: 80px;
+    animation: giro 1s linear infinite;
+    justify-content: center;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/*tabla carrito*/
+
+.tabla {
+    margin-left: 600px;
+}
+
+.tabla .btn {
+    color: black;
+    padding: 6px 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: bisque;
+    color: #ffffff;
+    text-align: middle;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.imgBasura {
+    width: 40px;
+    height: 40px;
+}
